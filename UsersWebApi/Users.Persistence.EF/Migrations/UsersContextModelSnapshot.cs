@@ -41,6 +41,24 @@ namespace Users.Persistence.EF.Migrations
                     b.HasKey("AddressId");
 
                     b.ToTable("Addresses");
+
+                    b.HasData(
+                        new
+                        {
+                            AddressId = 1,
+                            City = "Wroclaw",
+                            Country = "Poland",
+                            PostCode = "50-008",
+                            Street = "Kosciuszki"
+                        },
+                        new
+                        {
+                            AddressId = 2,
+                            City = "Kielce",
+                            Country = "Poland",
+                            PostCode = "25-351",
+                            Street = "Kosciuszki"
+                        });
                 });
 
             modelBuilder.Entity("Users.Domain.Entities.User", b =>
@@ -88,6 +106,28 @@ namespace Users.Persistence.EF.Migrations
                     b.HasIndex("UserProfileSettingId");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            EmailAddress = "bartek.wlodarz@gmail.com",
+                            Name = "Bartek",
+                            Surname = "Wlodarz",
+                            UserAddressId = 1,
+                            UserProfileSettingId = 1
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            EmailAddress = "dawid.wlodarz@gmail.com",
+                            Name = "Dawid",
+                            Surname = "Wlodarz",
+                            UserAddressId = 2,
+                            UserProfileSettingId = 2
+                        });
                 });
 
             modelBuilder.Entity("Users.Domain.Entities.UserProfileSetting", b =>
@@ -112,6 +152,24 @@ namespace Users.Persistence.EF.Migrations
                     b.HasKey("UserProfileSettingId");
 
                     b.ToTable("UserProfileSettings");
+
+                    b.HasData(
+                        new
+                        {
+                            UserProfileSettingId = 1,
+                            DateOfBirth = new DateTime(1996, 12, 9, 0, 0, 0, 0, DateTimeKind.Local),
+                            FavouriteFrontendFramework = "React",
+                            IsAdmin = true,
+                            IsExtraUser = false
+                        },
+                        new
+                        {
+                            UserProfileSettingId = 2,
+                            DateOfBirth = new DateTime(2001, 12, 9, 0, 0, 0, 0, DateTimeKind.Local),
+                            FavouriteFrontendFramework = "Vue.JS",
+                            IsAdmin = false,
+                            IsExtraUser = true
+                        });
                 });
 
             modelBuilder.Entity("Users.Domain.Entities.User", b =>

@@ -43,10 +43,21 @@ namespace Users.Persistence.EF
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(UsersContext).Assembly);
 
-            //foreach (var item in DummyUsers.GetDummyUsers())
-            //{
-            //    modelBuilder.Entity<User>().HasData(item);
-            //}
+            foreach (var item in DummyUsers.GetDummyUsers())
+            {
+                modelBuilder.Entity<User>().HasData(item);
+            }
+            
+            foreach (var item in DummyAddresses.GetDummyAddress())
+            {
+                modelBuilder.Entity<Address>().HasData(item);
+            }
+            
+            
+            foreach (var item in DummyUserProfileSettings.GetDummyUserProfileSettings())
+            {
+                modelBuilder.Entity<UserProfileSetting>().HasData(item);
+            }
 
         }
     }

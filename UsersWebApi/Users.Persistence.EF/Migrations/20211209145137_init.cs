@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Users.Persistence.EF.Migrations
 {
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -71,6 +71,34 @@ namespace Users.Persistence.EF.Migrations
                         principalColumn: "UserProfileSettingId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Addresses",
+                columns: new[] { "AddressId", "City", "Country", "PostCode", "Street" },
+                values: new object[,]
+                {
+                    { 1, "Wroclaw", "Poland", "50-008", "Kosciuszki" },
+                    { 2, "Kielce", "Poland", "25-351", "Kosciuszki" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "UserProfileSettings",
+                columns: new[] { "UserProfileSettingId", "DateOfBirth", "FavouriteFrontendFramework", "IsAdmin", "IsExtraUser" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(1996, 12, 9, 0, 0, 0, 0, DateTimeKind.Local), "React", true, false },
+                    { 2, new DateTime(2001, 12, 9, 0, 0, 0, 0, DateTimeKind.Local), "Vue.JS", false, true }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserId", "CreatedBy", "CreatedOn", "EmailAddress", "LastModifiedBy", "LastModifiedDate", "Name", "Surname", "UserAddressId", "UserProfileSettingId" },
+                values: new object[] { 1, null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "bartek.wlodarz@gmail.com", null, null, "Bartek", "Wlodarz", 1, 1 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserId", "CreatedBy", "CreatedOn", "EmailAddress", "LastModifiedBy", "LastModifiedDate", "Name", "Surname", "UserAddressId", "UserProfileSettingId" },
+                values: new object[] { 2, null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "dawid.wlodarz@gmail.com", null, null, "Dawid", "Wlodarz", 2, 2 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_UserAddressId",

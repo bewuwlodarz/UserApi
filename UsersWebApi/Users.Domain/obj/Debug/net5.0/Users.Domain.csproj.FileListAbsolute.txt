@@ -10,3 +10,15 @@ C:\Users\bawl\Documents\BawlWebApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Use
 C:\Users\bawl\Documents\BawlWebApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.dll
 C:\Users\bawl\Documents\BawlWebApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\ref\Users.Domain.dll
 C:\Users\bawl\Documents\BawlWebApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.pdb
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\bin\Debug\net5.0\Users.Domain.deps.json
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\bin\Debug\net5.0\Users.Domain.dll
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\bin\Debug\net5.0\ref\Users.Domain.dll
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\bin\Debug\net5.0\Users.Domain.pdb
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.csproj.AssemblyReference.cache
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.AssemblyInfoInputs.cache
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.AssemblyInfo.cs
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.dll
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\ref\Users.Domain.dll
+C:\Users\bawl\Documents\BawlWebApi\UserApi\UsersWebApi\Users.Domain\obj\Debug\net5.0\Users.Domain.pdb

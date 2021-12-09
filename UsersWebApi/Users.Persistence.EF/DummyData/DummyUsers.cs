@@ -19,6 +19,8 @@ namespace Users.Persistence.EF.DummyData
                     Name = "Bartek",
                     Surname = "Wlodarz",
                     EmailAddress = "bartek.wlodarz@gmail.com",
+                    UserAddressId = 1,
+                    UserProfileSettingId = 1
                 },
 
                 new User()
@@ -27,6 +29,8 @@ namespace Users.Persistence.EF.DummyData
                     Name = "Dawid",
                     Surname = "Wlodarz",
                     EmailAddress = "dawid.wlodarz@gmail.com",
+                    UserAddressId = 2,
+                    UserProfileSettingId = 2
                 },
 
             };
